@@ -1,0 +1,116 @@
+/* das ist die leicht überarbeitete Version meines cert projects */
+
+body {
+    font-family: palatino, serif;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    text-align: center;
+    }
+  
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 0;
+    padding-top: 10px;
+      /* damit wird der Abstand zum nächsten element geriner */
+  }
+
+  @media (max-width: 460px) {
+    h1 {
+      font-size: 2.5rem;
+      line-height: 1.2;
+    }
+  }
+  /* This @media-query decreases the font size of the main heading to 35px and adjusts the line height to 1.2 for better spacing on small screens. */
+  
+  h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  #synopsis {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  
+  
+  #main {
+    background-color: antiquewhite;
+    /* Farbe geändert von burlywood auf antique white für bessere Farbharmonie, also ästhetische Gründe */
+    margin: 20px 5px;
+    border-radius: 6px;
+  }
+
+  @media (max-width: 460px) {
+    #main {
+      margin: 0;
+    }
+  }
+
+  /* This @media-query removes the margin around the main container to utilize the full screen width on small devices. */
+  
+  #img-div {
+    background-color: white;
+    margin: 10;
+    padding: 10px;
+  }
+  
+  img {
+    display: block;
+    margin: 0 auto;
+    /* durch die Kombi aus display: block und margin: 0 auto wird Bild zentral */
+    max-width: 100%;
+    height: auto;
+  
+  }
+  
+  figcaption {
+    text-align: center;
+    margin: 15px 20px;
+    font-size: 1rem;
+  }
+  
+  @media (max-width: 460px) {
+    figcaption {
+      font-size: 1.4rem;
+    }
+  }
+/* This @media-query reduces the font size of the image caption to 14px for better readability on smaller screens */
+
+  
+  #tribute-info {
+    max-width: 550px;
+    margin: 0 auto 50px auto;
+    text-align: left;
+    line-height: 1.6;
+  }
+  
+  li {
+    margin: 15px;
+    /* font-size erbt diese Klasse aus den declarations für body */
+  }
+  
+  .yearnum {
+    font-weight: bold;
+    /* das ist für die spans, um nur die Jahreszahl bold darzustellen, mithilfe der richtigen Fragestellung an chatgpt selbst drauf gekommen */
+  }
+  
+  span::after {
+    content:" - ";
+  }
+  
+  #quote-block {
+    margin: 5px;
+    padding: 5vh;
+    font-style: italic;
+  }
+  
+  #tribute {
+    background-color: white;
+    font-size: 1.3rem;
+    margin: 10 px;
+    padding: 5px;
+  }
+  
+  
+  
